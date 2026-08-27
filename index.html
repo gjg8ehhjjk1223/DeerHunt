@@ -162,12 +162,7 @@
         .challenge-card p { color: #ccc; font-size: 16px; line-height: 1.8; text-align: left; text-indent: 2em; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
-        
-        /* 展开时的状态 */
-        .faq-item.active { border-color: var(--primary-color); }
-        .faq-item.active .faq-toggle-btn { background: var(--primary-color); color: #000; }
-        .faq-item.active .faq-answer { max-height: 500px; transition: max-height 0.6s ease-in-out; }
-
+    
         /* 联系我们 */
         .contact-section { background: url('./images/contact-bg.jpg') center/cover; position: relative; text-align: center; padding: 100px 0; border-top: 1px solid var(--primary-color); }
         .contact-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 0; }
@@ -238,10 +233,7 @@
             .challenge-card { padding: 25px 15px; margin: 0 10px; }
             .challenge-card p { text-indent: 0; }
 
-            /* 问题与解答适配 */
-            .faq-question-bar { flex-direction: column; align-items: flex-start; gap: 15px; padding: 15px 20px; }
-            .faq-toggle-btn { align-self: flex-end; }
-            .faq-answer-inner { padding: 15px 20px; }
+          
             
             /* 联系我们 */
             .contact-title { font-size: 32px; }
@@ -263,7 +255,7 @@
                 <a href="#history">开发历程</a>
                 <a href="#roadmap">未来规划</a>
                 <a href="#challenges">困境&难题</a>
-                <a href="#faq">问题与解答</a>
+        
                 <a href="#contact">联系我们</a>
             </div>
         </div>
@@ -539,24 +531,7 @@
             }, 2000);
         }
 
-        // 展开/收起 问题与解答 交互脚本
-        function toggleFAQ(element) {
-            // 获取对应的 faq-item 容器
-            const faqItem = element.closest('.faq-item');
-            const isActive = faqItem.classList.contains('active');
-            
-            // 点击其中一个时自动收起其他的（如果希望互不影响可注释掉下面这部分）
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-                item.querySelector('.faq-toggle-btn').innerText = '展开答案';
-            });
-            
-            // 如果原本不是激活状态，就展开当前点击的条目
-            if (!isActive) {
-                faqItem.classList.add('active');
-                faqItem.querySelector('.faq-toggle-btn').innerText = '收起答案';
-            }
-        }
+       
     </script>
 </body>
 </html>
