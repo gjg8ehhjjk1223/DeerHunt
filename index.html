@@ -162,21 +162,6 @@
         .challenge-card p { color: #ccc; font-size: 16px; line-height: 1.8; text-align: left; text-indent: 2em; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
-        /* ================= 新增：问题与解答 ================= */
-        .faq-list { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
-        .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
-        .faq-item:hover { border-color: var(--primary-color); box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
-        .faq-question-bar { padding: 20px 25px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: background 0.3s; user-select: none; }
-        .faq-item:hover .faq-question-bar { background: rgba(220, 179, 106, 0.05); }
-        .faq-question-title { font-size: 18px; color: #fff; font-family: '楷体', serif; margin: 0; flex: 1; padding-right: 20px; }
-        .faq-toggle-btn { 
-            background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color); 
-            padding: 6px 18px; border-radius: 4px; cursor: pointer; transition: all 0.3s; font-size: 14px; white-space: nowrap; outline: none;
-        }
-        .faq-toggle-btn:hover { background: var(--primary-color); color: #000; }
-        
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); background: #0a0a0a; }
-        .faq-answer-inner { padding: 20px 25px; color: #ccc; font-size: 15px; line-height: 1.8; border-top: 1px dashed var(--border-color); }
         
         /* 展开时的状态 */
         .faq-item.active { border-color: var(--primary-color); }
