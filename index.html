@@ -404,7 +404,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h4>那一天，服务器断开连接</h4>
-                        <p>曾经，我在《刀锋铁骑》的疆场上奋战了无数个日夜。当停服公告亮起，属于我们的中世纪沙场落下了帷幕。由于市面上再难找到纯粹的冷兵器对战感觉，作为一名程序员兼老玩家，我决定自己用虚幻引擎把那个世界建回来！</p>
+                        <p>曾经，我在《刀锋铁骑》的疆场上奋战了无数个日夜。当停服公告亮起，属于我们的冷兵器落下了帷幕。由于市面上再难找到纯粹的冷兵器对战感觉，我决定自己用虚幻引擎做一个个人独立冷兵器网游！</p>
                     </div>
                 </div>
                 
@@ -413,7 +413,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h4>新建文件夹：项目立项</h4>
-                        <p>一个人，一台电脑，开始了漫长的自学与开发之路。明确了不搞魔幻、只做硬核冷兵器的核心战斗框架，并逐步在引擎中搭建底层的物理与动作逻辑系统。</p>
+                        <p>一个人，一台电脑，开始了漫长的自学与开发之路。只做硬核冷兵器的核心战斗框架，并逐步在引擎中搭建底层的物理与动作逻辑系统。</p>
                     </div>
                 </div>
 
@@ -446,12 +446,12 @@
                 <div class="roadmap-step">
                     <div class="step-icon">02</div>
                     <h4 class="step-title">联机架构测试</h4>
-                    <p class="step-desc">引入专用服务器，进行小范围的 5v5 玩家局域网/线上延迟测试。</p>
+                    <p class="step-desc">进行小范围的10以内的线上测试，寻找bug和改进问题。</p>
                 </div>
                 <div class="roadmap-step step-active">
                     <div class="step-icon">03</div>
                     <h4 class="step-title">首测：老兵集结</h4>
-                    <p class="step-desc">向一直关注项目的玩家发放测试资格，体验核心骑战与攻城雏形。</p>
+                    <p class="step-desc">向一直关注项目的玩家发放测试资格，体验攻城雏形。</p>
                 </div>
                 <div class="roadmap-step">
                     <div class="step-icon">04</div>
@@ -472,96 +472,20 @@
             
             <div class="challenge-card">
                 <div class="challenge-icon">⚠️</div>
-                <h4>困难 1：准备用动捕打磨动作</h4>
-                <p>对于一款硬核冷兵器游戏而言，动作的“重量感”与“受击反馈”是灵魂。目前仅靠动画已经到达了个人能力的极限瓶颈。动作显得略显僵硬，缺乏真实挥砍的惯性与力量传导。因此未来会引入动作捕捉设备来进行底层的动作大洗牌。</p>
+                <h4>困难与挑战</h4>
+                <p>对于个人来说制作一款大型联机网游，实在太过复杂，工程量实在巨大，不过这也是优势，可以低成本运营下去，不会遇到停服的问题。这也是一个玩家共创游戏，有意见和想法可以和我反馈。</p>
                 <p style="margin-top: 10px;">但这面临着巨大的阻力。</p>
             </div>
         </div>
     </div>
 
-    <!-- 新增：问题与解答 -->
-    <div id="faq" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">问题与解答</h2>
-                <p class="section-desc">解惑答疑，这里有您想了解的信息</p>
-            </div>
-            
-            <div class="faq-list">
-                <!-- Q1 -->
-                <div class="faq-item">
-                    <div class="faq-question-bar" onclick="toggleFAQ(this)">
-                        <h4 class="faq-question-title">问题1：为什么游戏叫"代号：逐鹿"？</h4>
-                        <button class="faq-toggle-btn">展开答案</button>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            因为现在还没想好叫什么游戏，这是一款独立创作新游，核心玩法是攻城和四项攻击格挡，提前起名怕有人恶意抢注名字，然后后期不得已进行修改。
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q2 -->
-                <div class="faq-item">
-                    <div class="faq-question-bar" onclick="toggleFAQ(this)">
-                        <h4 class="faq-question-title">问题2：为什么不优先打磨动作，而是优先解决联机问题？</h4>
-                        <button class="faq-toggle-btn">展开答案</button>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            动作准备使用动捕设备，设备价格昂贵，不想还没框架就投入资金，导致失败，所以留在最后进行。
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q3 -->
-                <div class="faq-item">
-                    <div class="faq-question-bar" onclick="toggleFAQ(this)">
-                        <h4 class="faq-question-title">问题3：游戏群和网站的目的是什么？</h4>
-                        <button class="faq-toggle-btn">展开答案</button>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            只是进行实时分享进度和收集对游戏的建议，还有未来首次测试游戏使用，并无它意。
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q4 -->
-                <div class="faq-item">
-                    <div class="faq-question-bar" onclick="toggleFAQ(this)">
-                        <h4 class="faq-question-title">问题4：游戏什么时候能玩上？</h4>
-                        <button class="faq-toggle-btn">展开答案</button>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            我也无法确认准确日期，如果有消息会第一时间在群内通知和网站更新，还请留意。
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q5 -->
-                <div class="faq-item">
-                    <div class="faq-question-bar" onclick="toggleFAQ(this)">
-                        <h4 class="faq-question-title">问题5：待更新（有问题及时联系）。</h4>
-                        <button class="faq-toggle-btn">展开答案</button>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            待更新。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- 联系我们 -->
     <div id="contact" class="contact-section">
         <div class="contact-overlay"></div>
         <div class="contact-content">
             <h2 class="contact-title">天下未定，待君入阵</h2>
-            <p class="contact-desc">独立开发不易，如果您也是冷兵器游戏爱好者，或者曾是老玩家，欢迎加入社区，您的每一个建议都是游戏前进的动力！</p>
+            <p class="contact-desc">独立开发不易，如果您也是冷兵器游戏爱好者，欢迎加入社区，您的每一个建议都是游戏前进的动力！</p>
             
             <div class="social-cards">
                 <div class="social-card" onclick="alert('请通过首页顶部的二维码扫码加群哦！')">
@@ -589,7 +513,7 @@
     <!-- 页脚 -->
     <footer>
         <p>代号：逐鹿 (Code: Deer Hunt) | 个人独立游戏开发项目</p>
-        <p style="margin-top: 5px; color: #444;">致敬曾经在《刀锋铁骑》中并肩作战的兄弟们</p>
+        <p style="margin-top: 5px; color: #444;">致敬曾经并肩作战的兄弟们</p>
     </footer>
 
     <!-- 脚本部分 -->
